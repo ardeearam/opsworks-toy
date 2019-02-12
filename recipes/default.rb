@@ -9,12 +9,12 @@ apt_update "update"
 
 apt_package %w(nodejs python3 ruby)
 
-file "/home/ardee/hello.txt" do
+file "/tmp/hello.txt" do
   content "Hello, this is my first cookbook recipe\n"
   action :create
 end
 
 execute "hello_message" do
-  command "ls -l > /home/ardee/directory.txt"
+  command "ls -l > /tmp/directory.txt"
 end
 
