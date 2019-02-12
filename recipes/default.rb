@@ -5,7 +5,7 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 #
 #
-apt_update
+apt_update "update"
 
 apt_package %w(nodejs python3 ruby)
 
